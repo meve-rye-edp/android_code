@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <PreferenceCategory android:title="ECar Information" />
+
+    <EditTextPreference
+        android:key="current_car"
+        android:summary="Current ECar"
+        android:title="ECar" />
+    
+    <EditTextPreference
+        android:key="ecar_id"
+        android:summary="Database ID for your ECar"
+        android:title="ECar ID" />
+
+    <PreferenceCategory android:title="Notifications" />
+
+    <CheckBoxPreference
+        android:key="flag_soc_low"
+        android:summary="On/Off"
+        android:title="Notify me when battery is low" />
+    <CheckBoxPreference
+        android:key="flag_charging"
+        android:summary="On/Off"
+        android:title="Notify me when charging" />
+    
+<!--     <ListPreference android:key="update_interval" -->
+<!--     android:title="Update Interval" -->
+<!--     android:entries="@array/intervalNames" -->
+<!--     android:entryValues="@array/intervalValues" -->
+<!--     android:defaultValue="15"> -->
+<!-- </ListPreference> -->
+
+</PreferenceScreen>
